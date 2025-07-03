@@ -1,0 +1,11 @@
+\begin{samepage}
+{\customcvproject{
+DISTRIBUTED WHITEBOARD APPLICATION}{January 2025}
+  {\begin{itemize}
+    \item Engineered a fault-tolerant, cloud-native whiteboard system deployed on 3 OpenStack VMs using the Paxos consensus algorithm, enabling consistent multi-user (1 to 10) collaboration with real-time synchronization and deterministic conflict resolution across distributed nodes.
+    \item Containerized backend services using Docker and orchestrated the deployment via Kubernetes StatefulSets with Horizontal Pod Autoscaler (HPA), scaling from 1 to 4+ pods while preserving whiteboard state and handling dynamic IP changes, node failures, and user growth with 100\% uptime.
+    \item Automated OpenStack networking, port forwarding, and security group setup to support high-throughput UDP/TCP traffic for inter-node messaging and Flask-SocketIO events, achieving sub-150ms latency and stable CP-Compliant performance during real-time collaboration.
+  \end{itemize}
+  }
+}
+\end{samepage}
